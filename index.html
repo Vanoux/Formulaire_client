@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>formulaire</title>
+</head>
+
+<body>
+
+    <select id="selection">
+  <option id="clientA">Client A</option> 
+  <option id="clientB">Client B</option>
+  <option id="clientC">Client C</option>
+</select>
+    <div id="infos">infos client</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        $("#selection").click(function() {
+            var selected = $("#selection option:selected").text();
+            console.log(selected);
+            $.getJSON('data.json', function(json) {
+                var client = json[selected];
+                //$("#infos2").text("Nom: "+ client.nom)
+                //console.table(client)
+                $("#infos").text(JSON.stringify(client))
+                console.table(client);
+
+            })
+        });
+
+    </script>
+</body>
+
+</html>

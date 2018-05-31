@@ -1,0 +1,31 @@
+{
+	"Client A": {
+		"nom": "Marchal",
+		"prenom": "Julie",
+		"age": "54",
+		"profession": "Marechal ferrant",
+		"email": "julieM@gmail.com",
+		"tel": "0604053320",
+		"adresse": "1 Rue du Maréchal me voilà"
+	},
+
+	"Client B": {
+		"nom": "Paris",
+		"prenom": "Paulane",
+		"age": "23",
+		"profession": "Peintre",
+		"email": "parisPaulane@free.fr",
+		"tel": "0755347899",
+		"adresse": "20 boulevard des artistes"
+	},
+
+	"Client C": {
+		"nom": "Pépé",
+		"prenom": "Lino",
+		"age": "34",
+		"profession": "Vendeur de rêve",
+		"email": "Pépé.Lino@yoyo.com",
+		"tel": "0675043270",
+		"adresse": "Chemin du Roublard"
+	}
+}
